@@ -1,0 +1,72 @@
+/* ==UserStyle==
+@name           Hangfire Dark Theme
+@namespace      alex-way
+@author         alex-way
+@description    Dark theme for Hangfire.
+@version        1.0.0
+==/UserStyle== */
+
+@-moz-document regexp(".*/backgroundjobs.*") {
+	body {
+		background: #1a1f2b;
+		color: white;
+	}
+
+	#footer {
+		border-top: 1px solid white;
+	}
+
+	.navbar, #footer {
+		background: #1c2029;
+	}
+
+	.nav > .active > a, code, pre, .job-snippet, .job-snippet-code code {
+		color: white;
+		background-color: #282a36 !important;
+	}
+
+	.job-snippet-code pre .comment, .st-file {
+		color: #546e7a;
+	}
+	.job-snippet-code pre .keyword, .st-param-name {
+		color: #c792ea;
+}
+	.job-snippet-code pre .string, .job-snippet-properties code, .st-method, .st-line {
+		color: #f07178;
+	}
+
+	.navbar-default .navbar-brand, .page-header, #stats a.list-group-item, span.metric-default, #stats a.list-group-item:hover, #stats a.list-group-item:focus, .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .state-card-state-inactive .state-card-title, .state-card-state-inactive p, .state-card-state-inactive span, .state-card-state-inactive small, .state-card-state-success p, .state-card-state-success span, .state-card-state-success small, #errorAlert {
+		color: white;
+	}
+
+	#stats .list-group-item, .table>tbody>tr.hover:hover>td, .table>tbody>tr.hover:hover>th, .paginator > a.active, .paginator > a:hover, .paginator > a.active:hover, .state-card, .btn-default {
+		color: white !important;
+		background: #313847;
+	}
+
+	#stats .list-group-item.active, #stats .list-group-item.active:hover, #stats .list-group-item.active:focus, #stats a.list-group-item:hover, #stats a.list-group-item:focus, .paginator > a, .state-card-body, .btn-default:hover, .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th, .state-card-state-success .state-card-body {
+		background: #232833;
+		color: white;
+	}
+
+	#stats a, .paginator > a, .state-card-state-inactive, .state-card, .btn-default:hover, .btn-default, #errorAlert {
+		border: none;
+	}
+
+	.btn-death, .state-card-state-inactive, #errorAlert {
+		background: #f07178;
+	}
+	.btn-death:hover {
+		background: #a65054;
+	}
+	.state-card-state-warning .state-card-body {
+		background: #546e7a;
+	}
+	.state-card-state-warning .state-card-title {
+		color: #84acbf;
+	}
+	.state-card-state-success, .state-card-state-success .state-card-title {
+		color: white;
+		background: #5cb85c;
+	}
+}
